@@ -10,23 +10,19 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 
-const navLinkClassName = "";
-const primaryNavLinkClassName =
-  "inline-flex h-9 items-center gap-2 rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90";
-
 export default function Menu() {
   return (
     <div className="ml-auto flex items-center justify-end">
       <nav className="hidden items-center gap-2 md:flex">
         <ModeToggle />
         <Button variant="ghost">
-          <Link href="/cart">
+          <Link href="/cart" className="inline-flex items-center gap-2">
             <ShoppingCart className="size-4" />
             <span>Cart</span>
           </Link>
         </Button>
         <Button>
-          <Link href="/sign-in">
+          <Link href="/sign-in" className="inline-flex items-center gap-2">
             <UserRoundIcon className="size-4" />
             <span>Sign In</span>
           </Link>
@@ -41,12 +37,12 @@ export default function Menu() {
             <SheetTitle>Menu</SheetTitle>
             <ModeToggle />
             <Button variant="ghost">
-              <Link href="/cart">
+              <Link href="/cart" className="inline-flex items-center gap-2">
                 <ShoppingCart /> Cart
               </Link>
             </Button>
             <Button>
-              <Link href="/sign-in">
+              <Link href="/sign-in" className="inline-flex items-center gap-2">
                 <UserRoundIcon className="size-4" />
                 <span>Sign In</span>
               </Link>
