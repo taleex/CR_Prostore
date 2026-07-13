@@ -5,7 +5,7 @@ export default function HomePage() {
   console.log(sampleData);
   return (
     <>
-      <ProductList data={sampleData.products} title="Hello" limit={4} />;
+      <ProductList data={sampleData.products} title="New items" limit={4} />;
     </>
   );
 }
