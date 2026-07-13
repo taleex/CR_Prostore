@@ -1,3 +1,11 @@
+import ProductList from "@/components/shared/product/product-list";
+import sampleData from "@/db/sample-data";
+
 export default function HomePage() {
-  return <div>hello</div>;
+  console.log(sampleData);
+  return (
+    <>
+      <ProductList data={sampleData.products} title="Hello" limit={4} />;
+    </>
+  );
 }
